@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 if [ "$(uname -s)" != "Darwin" ]; then
 	exit 0
@@ -14,3 +14,7 @@ if ! command -v brew > /dev/null 2>&1; then
 else
     echo "  › Homebrew already installed"
 fi
+
+echo "› Homebrew:"
+echo "  › Bundle"
+brew bundle
