@@ -18,3 +18,6 @@ fi
 echo "› Homebrew:"
 echo "  › Bundle"
 brew bundle
+
+antibody/init.sh
+zsh/init.sh
