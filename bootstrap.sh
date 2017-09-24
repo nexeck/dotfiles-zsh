@@ -21,3 +21,4 @@ brew bundle
 
 antibody/init.sh
 zsh/init.sh
+macos/init.sh
