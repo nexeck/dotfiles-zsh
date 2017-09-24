@@ -1,20 +1,14 @@
 # _exports
-export EDITOR='nvim'
 export DOTFILES="$HOME/.dotfiles"
 
-# _load zsh plugins
-source ~/.zsh_plugins.sh
+# _load antibody
+source <(antibody init)
 
-# _source aliases
-#source ~/.dotfiles/zsh/aliases/alias.zsh
-#source ~/.dotfiles/zsh/functions/functions.zsh
-source ~/.dotfiles/zsh/functions/fzf.zsh
-#source ~/.dotfiles/zsh/aliases/git.zsh
-#source ~/.dotfiles/zsh/aliases/vim.zsh
-#source ~/.dotfiles/zsh/aliases/cd.zsh
-#source ~/.dotfiles/zsh/aliases/dev.zsh
-#source ~/.dotfiles/zsh/aliases/app.zsh
-#source ~/.dotfiles/zsh/zsh/bindings.zsh
+# _load zsh plugins
+antibody bundle mgee/slimline
+
+# _source
+source ~/.zsh/functions/fzf.zsh
 
 setopt autocd
 
