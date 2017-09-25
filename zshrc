@@ -5,7 +5,7 @@ export DOTFILES="$HOME/.dotfiles"
 source <(antibody init)
 
 # _load zsh plugins
-antibody bundle mgee/slimline
+antibody bundle < ~/.zsh/plugins.txt
 
 # _source
 source ~/.zsh/functions/fzf.zsh
