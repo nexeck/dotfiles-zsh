@@ -1,5 +1,6 @@
 # _exports
 export DOTFILES="$HOME/.dotfiles"
+export PATH="/usr/local/sbin:$PATH"
 
 # _load antibody
 source <(antibody init)
