@@ -9,7 +9,8 @@ source <(antibody init)
 antibody bundle < ~/.zsh/plugins.txt
 
 # _source
-source ~/.zsh/functions/fzf.zsh
+source ~/.zsh/functions/001-aliases.zsh
+source ~/.zsh/functions/002-fzf.zsh
 
 setopt autocd
 
