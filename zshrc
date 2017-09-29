@@ -11,6 +11,7 @@ antibody bundle < ~/.zsh/plugins.txt
 # _source
 source ~/.zsh/functions/001-aliases.zsh
 source ~/.zsh/functions/002-fzf.zsh
+source ~/.zsh/functions/003-git-fire.zsh
 
 setopt autocd
 
