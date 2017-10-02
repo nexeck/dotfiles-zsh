@@ -13,14 +13,22 @@ source ~/.zsh/functions/001-aliases.zsh
 source ~/.zsh/functions/002-fzf.zsh
 source ~/.zsh/functions/003-git-fire.zsh
 
-setopt autocd
-
 # _secret configs
-[[ -e ~/.secrets ]] && source ~/.secrets
+test -e ~/.secrets && source ~/.secrets
 
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' matcher-list +'l:|=* r:|=*'
+
+# Editors {{{
+if command -v nvim > /dev/null 2>&1; then
+  export EDITOR='nvim'
+  export VISUAL='nvim'
+else
+  export EDITOR='vim'
+  export VISUAL='vim'
+fi
+# }}}
 
 # Directory {{{
 setopt AUTO_CD           # Auto changes to a directory without typing cd.
