@@ -3,11 +3,11 @@ tap 'caskroom/fonts'
 tap 'getantibody/tap'
 tap 'thoughtbot/formulae'
 tap 'scaleway/scaleway'
+tap 'sam701/awstools'
 
 brew 'thoughtbot/formulae/rcm'
 brew 'getantibody/tap/antibody'
 brew 'git'
-brew 'go'
 brew 'gnupg'
 brew 'tig'
 brew 'tmux'
@@ -19,16 +19,28 @@ brew 'openssh'
 brew 'exa'
 brew 'scaleway/scaleway/scw'
 
-cask 'iterm2'
-cask 'google-chrome'
-cask 'docker'
+#### Go ####
+brew 'go'
+brew 'dep'
+
+#### AWS ####
+brew 'sam701/awstools/awstools'
+
+#### IDE ####
 cask 'atom'
 cask 'visual-studio-code'
 cask 'jetbrains-toolbox'
-cask 'tunnelblick'
-cask 'microsoft-office'
+brew 'neovim'
+
+#### Fonts ####
 cask 'font-hack'
 cask 'font-hack-nerd-font-mono'
 cask 'font-sourcecodepro-nerd-font-mono'
+
+cask 'iterm2'
+cask 'google-chrome'
+cask 'docker'
+cask 'tunnelblick'
+cask 'microsoft-office'
 cask 'sourcetree'
 cask 'whatsapp'
