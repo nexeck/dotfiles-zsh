@@ -7,18 +7,24 @@ tap 'scaleway/scaleway'
 tap 'sam701/awstools'
 
 #### Packages ####
-brew 'thoughtbot/formulae/rcm'
+
+#### Shell ####
+brew 'zsh'
 brew 'getantibody/tap/antibody'
-brew 'gnupg'
 brew 'tmux'
 brew 'fzf'
+brew 'exa'
+
+#### Tools ####
+brew 'thoughtbot/formulae/rcm'
+brew 'gnupg'
 brew 'rsync'
-brew 'zsh'
 brew 'ansible'
 brew 'openssh'
-brew 'exa'
-brew 'scaleway/scaleway/scw'
 brew 'htop'
+cask 'iterm2'
+cask 'google-chrome'
+cask 'tunnelblick'
 
 #### Git ####
 brew 'git'
@@ -35,8 +41,9 @@ brew 'ponysay'
 brew 'go'
 brew 'dep'
 
-#### AWS ####
+#### Hosting ####
 brew 'sam701/awstools/awstools'
+brew 'scaleway/scaleway/scw'
 
 #### IDE ####
 cask 'atom'
@@ -52,8 +59,9 @@ cask 'font-sourcecodepro-nerd-font-mono'
 #### Communication ####
 cask 'whatsapp'
 
-cask 'iterm2'
-cask 'google-chrome'
+#### DevTools ####
+cask 'minikube'
 cask 'docker'
-cask 'tunnelblick'
+
+#### Office ####
 cask 'microsoft-office'
