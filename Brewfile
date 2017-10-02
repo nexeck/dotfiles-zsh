@@ -18,6 +18,7 @@ brew 'ansible'
 brew 'openssh'
 brew 'exa'
 brew 'scaleway/scaleway/scw'
+brew 'htop'
 
 #### Go ####
 brew 'go'
