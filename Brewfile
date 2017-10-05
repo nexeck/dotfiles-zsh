@@ -10,6 +10,7 @@ tap 'sam701/awstools'
 
 #### Shell ####
 brew 'zsh'
+brew 'zsh-completion'
 brew 'getantibody/tap/antibody'
 brew 'tmux'
 brew 'fzf'
@@ -22,6 +23,7 @@ brew 'rsync'
 brew 'ansible'
 brew 'openssh'
 brew 'htop'
+brew 'watch'
 cask 'iterm2'
 cask 'google-chrome'
 cask 'tunnelblick'
@@ -36,6 +38,7 @@ cask 'github-desktop'
 #### Fun ####
 brew 'fortune'
 brew 'ponysay'
+cask 'kindle'
 
 #### Go ####
 brew 'go'
@@ -61,7 +64,10 @@ cask 'whatsapp'
 
 #### DevTools ####
 cask 'minikube'
+brew 'kubectl'
 cask 'docker'
+brew 'docker-machine-driver-xhyve'
+brew 'terraform'
 
 #### Office ####
 cask 'microsoft-office'
