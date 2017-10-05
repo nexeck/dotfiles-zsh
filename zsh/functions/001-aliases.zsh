@@ -6,9 +6,22 @@ else
   alias diff='diff --unified'
 fi
 
+if command -v hub > /dev/null 2>&1; then
+  eval "$(hub alias -s)"
+fi
+
 if command -v exa > /dev/null 2>&1; then
   alias ls='exa --group-directories-first'
-  alias lla='exa -l -a --group-directories-first'
+  alias l='ls'
+  alias ll='ls -l'
+  alias la='ll -a'
 else
-  alias lla='ls -al'
+  alias l='ls'
+  alias ll='ls -l'
+  alias la='ll -a'
 fi
+
+# Update and upgrade all packages, afterwards perform a cleanup
+alias brewup='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
+
+alias dns-clear='sudo killall -HUP mDNSResponder'
