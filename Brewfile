@@ -5,6 +5,7 @@ tap 'getantibody/tap'
 tap 'thoughtbot/formulae'
 tap 'scaleway/scaleway'
 tap 'sam701/awstools'
+tap 'giantswarm/giantswarm'
 
 #### Packages ####
 
@@ -19,14 +20,18 @@ brew 'exa'
 #### Tools ####
 brew 'thoughtbot/formulae/rcm'
 brew 'gnupg'
+cask 'gpgtools'
 brew 'rsync'
 brew 'ansible'
 brew 'openssh'
 brew 'htop'
 brew 'watch'
+brew 'graphviz'
+brew 'vegeta'
 cask 'iterm2'
 cask 'google-chrome'
 cask 'tunnelblick'
+cask 'dashlane'
 
 #### Git ####
 brew 'git'
@@ -61,10 +66,13 @@ cask 'font-sourcecodepro-nerd-font-mono'
 
 #### Communication ####
 cask 'whatsapp'
+cask 'slack'
+cask 'riot'
 
 #### DevTools ####
 cask 'minikube'
 brew 'kubectl'
+brew 'giantswarm/giantswarm/gsctl'
 cask 'docker'
 brew 'docker-machine-driver-xhyve'
 brew 'terraform'
