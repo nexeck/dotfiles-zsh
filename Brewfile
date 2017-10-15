@@ -62,6 +62,7 @@ cask 'atom'
 cask 'visual-studio-code'
 cask 'jetbrains-toolbox'
 brew 'neovim'
+brew 'micro'
 
 #### Fonts ####
 cask 'font-hack'
