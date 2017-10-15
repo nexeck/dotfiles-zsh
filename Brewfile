@@ -1,6 +1,7 @@
 #### Taps ####
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
+tap 'caskroom/versions'
 tap 'getantibody/tap'
 tap 'thoughtbot/formulae'
 tap 'scaleway/scaleway'
@@ -49,6 +50,9 @@ cask 'kindle'
 brew 'go'
 brew 'dep'
 
+#### Java ####
+cask 'java8'
+
 #### Hosting ####
 brew 'sam701/awstools/awstools'
 brew 'scaleway/scaleway/scw'
@@ -76,6 +80,7 @@ brew 'giantswarm/giantswarm/gsctl'
 cask 'docker'
 brew 'docker-machine-driver-xhyve'
 brew 'terraform'
+brew 'bazel'
 
 #### Office ####
 cask 'microsoft-office'
