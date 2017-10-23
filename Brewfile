@@ -33,6 +33,9 @@ cask 'iterm2'
 cask 'google-chrome'
 cask 'tunnelblick'
 cask 'dashlane'
+brew 'hugo'
+brew 'jq'
+brew 'wireguard-tools'
 
 #### Git ####
 brew 'git'
@@ -56,6 +59,7 @@ cask 'java8'
 #### Hosting ####
 brew 'sam701/awstools/awstools'
 brew 'scaleway/scaleway/scw'
+brew 'azure-cli'
 
 #### IDE ####
 cask 'atom'
@@ -73,15 +77,19 @@ cask 'font-sourcecodepro-nerd-font-mono'
 cask 'whatsapp'
 cask 'slack'
 cask 'riot'
+cask 'keybase'
+cask 'riot'
 
 #### DevTools ####
 cask 'minikube'
 brew 'kubectl'
+brew 'kubernetes-helm'
 brew 'giantswarm/giantswarm/gsctl'
 cask 'docker'
 brew 'docker-machine-driver-xhyve'
 brew 'terraform'
 brew 'bazel'
+brew 'protobuf'
 
 #### Office ####
 cask 'microsoft-office'
