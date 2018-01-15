@@ -1,0 +1,56 @@
+#!/usr/bin/env sh
+
+task_set_google() {
+  sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4
+}
+
+task_set_quad9() {
+  sudo networksetup -setdnsservers Wi-Fi 9.9.9.9
+}
+
+task_reset() {
+  sudo networksetup -setdnsservers Wi-Fi
+}
+
+task_clear() {
+  sudo killall -HUP mDNSResponder
+}
+
+task_set() {
+  provider=${1:-}
+  shift || true
+  case ${command} in
+    google) task_set_google ;;
+    quad9)  task_set_quad9 ;;
+    *)      task_set_usage ;;
+  esac
+}
+
+task_get() {
+  sudo networksetup -getdnsservers Wi-Fi
+}
+
+task_set_usage() {
+  echo "google / quad9"
+  exit 1
+}
+
+task_usage() {
+  echo "DNS CLI
+    clear           Clear DNS cache
+    get             Get current DNS server
+    set <provider>  Set DNS server to specified provider
+         Prodiver:  google / quad9
+    reset           Reset DNS server to DHCP default"
+  exit 1
+}
+
+command=${1:-}
+shift || true
+case ${command} in
+  clear)  task_clear ;;
+  get)    task_get ;;
+  set)    task_set {$@,1} ;;
+  reset)  task_reset ;;
+  *)      task_usage ;;
+esac
