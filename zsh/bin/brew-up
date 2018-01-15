@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+VERSION=0.1
+
+brew_up() {
+  brew update
+  brew upgrade
+  brew cleanup --force
+  brew cask cleanup
+  brew prune
+  brew doctor
+}
+
+brew_up

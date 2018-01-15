@@ -21,7 +21,4 @@ else
   alias la='ll -a'
 fi
 
-# Update and upgrade all packages, afterwards perform a cleanup
-alias brewup='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
-
-alias dns-clear='sudo killall -HUP mDNSResponder'
+alias dns-clear='sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
