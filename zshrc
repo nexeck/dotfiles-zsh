@@ -1,8 +1,12 @@
 # _exports
 export DOTFILES="$HOME/.dotfiles"
 export PATH="/usr/local/sbin:$PATH"
-export PATH=$PATH:$(go env GOPATH)/bin
+export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$HOME/.dotfiles/zsh/bin:$PATH"
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 # _load antibody
 source <(antibody init)
@@ -75,4 +79,3 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
 setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 # }}}
-
