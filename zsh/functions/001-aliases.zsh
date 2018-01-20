@@ -20,5 +20,3 @@ else
   alias ll='ls -l'
   alias la='ll -a'
 fi
-
-alias dns-clear='sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
