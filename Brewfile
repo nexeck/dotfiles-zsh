@@ -122,7 +122,7 @@ cask 'arduino'
 ### IOT
 brew 'platformio'
 brew 'picocom'
-cask 'silicon-labs-vcp-driver'
+cask 'caskroom/drivers/silicon-labs-vcp-driver'
 
 ### Kubernetes
 cask 'minikube'
