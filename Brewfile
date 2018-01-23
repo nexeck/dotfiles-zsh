@@ -117,6 +117,7 @@ cask 'atom'
 cask 'visual-studio-code'
 cask 'jetbrains-toolbox'
 brew 'neovim'
+brew 'micro'
 cask 'arduino'
 
 ### IOT
