@@ -10,6 +10,7 @@ tap 'scaleway/scaleway'
 tap 'sam701/awstools'
 tap 'giantswarm/giantswarm'
 tap 'justwatchcom/gopass'
+tap 'cloudfoundry/tap'
 
 # Packages
 
@@ -111,6 +112,7 @@ brew 'scaleway/scaleway/scw'
 brew 'azure-cli'
 brew 'awscli'
 brew 'giantswarm/giantswarm/gsctl'
+brew 'cloudfoundry/tap/credhub-cli'
 
 ### IDE
 cask 'atom'
