@@ -19,6 +19,7 @@ cask 'iterm2'
 brew 'zsh'
 brew 'zsh-completion'
 brew 'getantibody/tap/antibody'
+brew 'tmux-xpanes'
 brew 'tmux'
 brew 'reattach-to-user-namespace'
 
