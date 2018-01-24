@@ -31,17 +31,20 @@ task_get() {
 }
 
 task_set_usage() {
-  echo "google / quad9"
+  echo "usage: $0 set <provider>"
+  echo "  provider:"
+  echo "    google    Google DNS"
+  echo "    quad9     Quad9 DNS"
   exit 1
 }
 
 task_usage() {
-  echo "DNS CLI
-    clear           Clear DNS cache
-    get             Get current DNS server
-    set <provider>  Set DNS server to specified provider
-         Prodiver:  google / quad9
-    reset           Reset DNS server to DHCP default"
+  echo "usage: $0 clear | get | set | reset"
+  echo "  clear           clear DNS cache"
+  echo "  get             get current DNS server"
+  echo "  set <provider>  set dns server to specified provider"
+  echo "    provider: google / quad9"
+  echo "  reset           reset DNS server to default (DHCP)"
   exit 1
 }
 
