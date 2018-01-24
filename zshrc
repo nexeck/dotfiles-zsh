@@ -25,6 +25,9 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' matcher-list +'l:|=* r:|=*'
 
+autoload colors zsh/terminfo
+colors
+
 # Editors {{{
 if command -v nvim > /dev/null 2>&1; then
   export EDITOR='nvim'
