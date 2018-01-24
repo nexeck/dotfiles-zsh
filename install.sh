@@ -19,6 +19,7 @@ then
   git clone git@github.com:nexeck/dotfiles.git ~/.dotfiles
 else
   echo "  › Dotfiles exists"
+  exit 1
 fi
 
 echo "  › Install rcm"
