@@ -46,6 +46,7 @@ cask 'tunnelblick'
 cask 'dashlane'
 brew 'justwatchcom/gopass/gopass'
 brew 'openssh'
+cask 'authy'
 
 ### Provisioning
 brew 'ansible'
@@ -114,6 +115,7 @@ brew 'azure-cli'
 brew 'awscli'
 brew 'giantswarm/giantswarm/gsctl'
 brew 'cloudfoundry/tap/credhub-cli'
+cask 'aws-vault'
 
 ### IDE
 cask 'atom'
