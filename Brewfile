@@ -67,6 +67,8 @@ brew 'wget'
 brew 'pv'
 brew 'hugo'
 brew 'plantuml'
+brew 'tldr'
+brew 'ansifilter'
 
 ### Network
 brew 'vegeta'
@@ -80,9 +82,11 @@ brew 'git'
 brew 'git-quick-stats'
 brew 'git-cal'
 brew 'git-extras'
+brew 'git-town'
 brew 'tig'
 brew 'hub'
 brew 'gist'
+brew 'bfg'
 cask 'sourcetree'
 cask 'github-desktop'
 
@@ -124,6 +128,7 @@ cask 'jetbrains-toolbox'
 brew 'neovim'
 brew 'micro'
 cask 'arduino'
+cask 'mysqlworkbench'
 
 ### IOT
 brew 'platformio'
