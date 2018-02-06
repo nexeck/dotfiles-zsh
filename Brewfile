@@ -33,11 +33,11 @@ brew 'coreutils'
 brew 'binutils'
 brew 'diffutils'
 brew 'moreutils'
-brew 'findutils', args: ['with-default-names']
-brew 'gnu-sed', args: ['with-default-names']
-brew 'gnu-tar', args: ['with-default-names']
-brew 'gnu-which', args: ['with-default-names']
-brew 'grep', args: ['with-default-names']
+brew 'findutils'
+brew 'gnu-sed'
+brew 'gnu-tar'
+brew 'gnu-which'
+brew 'grep'
 
 ### Security
 brew 'gnupg'
