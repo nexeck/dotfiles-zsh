@@ -3,6 +3,7 @@ tap 'caskroom/cask'
 tap 'caskroom/drivers'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
+tap 'homebrew/php'
 
 tap 'getantibody/tap'
 tap 'thoughtbot/formulae'
@@ -10,7 +11,7 @@ tap 'scaleway/scaleway'
 tap 'sam701/awstools'
 tap 'giantswarm/giantswarm'
 tap 'justwatchcom/gopass'
-tap 'cloudfoundry/tap'
+tap 'eugenmayer/dockersync'
 
 # Packages
 
@@ -22,6 +23,7 @@ brew 'getantibody/tap/antibody'
 brew 'tmux-xpanes'
 brew 'tmux'
 brew 'reattach-to-user-namespace'
+cask 'hyper'
 
 ## Tools
 brew 'thoughtbot/formulae/rcm'
@@ -56,6 +58,9 @@ brew 'rsync'
 brew 'rclone'
 brew 'restic'
 
+### Filesystem
+brew 'unison'
+
 ### Utils
 brew 'htop'
 brew 'watch'
@@ -69,10 +74,14 @@ brew 'hugo'
 brew 'plantuml'
 brew 'tldr'
 brew 'ansifilter'
+brew 'p7zip'
+cask 'meld'
+brew 'tree'
 
 ### Network
 brew 'vegeta'
 brew 'wireguard-tools'
+cask 'angry-ip-scanner'
 
 brew 'lftp'
 cask 'filezilla'
@@ -83,6 +92,7 @@ brew 'git-quick-stats'
 brew 'git-cal'
 brew 'git-extras'
 brew 'git-town'
+brew 'git-lfs'
 brew 'tig'
 brew 'hub'
 brew 'gist'
@@ -112,14 +122,20 @@ brew 'dep'
 ### Java
 cask 'java'
 
+### Kotlin
+brew 'kotlin'
+
+### PHP
+brew 'homebrew/php/composer'
+
 ### Cloud
 brew 'sam701/awstools/awstools'
 brew 'scaleway/scaleway/scw'
 brew 'azure-cli'
 brew 'awscli'
 brew 'giantswarm/giantswarm/gsctl'
-brew 'cloudfoundry/tap/credhub-cli'
 cask 'aws-vault'
+brew 'duck'
 
 ### IDE
 cask 'atom'
@@ -144,10 +160,14 @@ brew 'kubernetes-helm'
 cask 'docker'
 brew 'docker-machine-driver-xhyve'
 
+### Docker Sync
+brew 'eugenmayer/dockersync/unox'
+
 ### DevOps
 brew 'terraform'
 brew 'terraform-docs'
 brew 'packer'
+cask 'inspec'
 
 ## Fonts
 cask 'caskroom/fonts/font-hack'
@@ -163,6 +183,7 @@ cask 'keybase'
 ## Office
 cask 'microsoft-office'
 cask 'skype-for-business'
+cask 'mmex'
 
 ## Photos
 cask 'darktable'
