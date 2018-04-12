@@ -8,6 +8,10 @@ task_set_quad9() {
   sudo networksetup -setdnsservers Wi-Fi 9.9.9.9 2620:fe::fe
 }
 
+task_set_cloudflare() {
+  sudo networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4007::1001
+}
+
 task_reset() {
   sudo networksetup -setdnsservers Wi-Fi Empty
 }
@@ -20,9 +24,10 @@ task_set() {
   provider=${1:-}
   shift || true
   case ${provider} in
-    google) task_set_google ;;
-    quad9)  task_set_quad9 ;;
-    *)      task_set_usage ;;
+    google)     task_set_google ;;
+    quad9)      task_set_quad9 ;;
+    cloudflare) task_set_cloudflare ;;
+    *)          task_set_usage ;;
   esac
 }
 
@@ -33,8 +38,9 @@ task_get() {
 task_set_usage() {
   echo "usage: $0 set <provider>"
   echo "  provider:"
-  echo "    google    Google DNS"
-  echo "    quad9     Quad9 DNS"
+  echo "    google      Google DNS"
+  echo "    quad9       Quad9 DNS"
+  echo "    cloudflare  Cloudflare DNS"
   exit 1
 }
 
