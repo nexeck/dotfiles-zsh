@@ -1,17 +1,19 @@
 # Taps
 tap 'caskroom/cask'
-tap 'caskroom/drivers'
-tap 'caskroom/fonts'
-tap 'caskroom/versions'
+tap 'homebrew/cask-drivers'
+tap 'homebrew/cask-fonts'
+tap 'homebrew/cask-versions'
 tap 'homebrew/php'
+tap 'homebrew/cask'
 
 tap 'getantibody/tap'
 tap 'thoughtbot/formulae'
 tap 'scaleway/scaleway'
 tap 'sam701/awstools'
-tap 'giantswarm/giantswarm'
-tap 'justwatchcom/gopass'
 tap 'eugenmayer/dockersync'
+tap 'wata727/tflint'
+tap 'wallix/awless'
+tap 'hairyhenderson/tap'
 
 # Packages
 
@@ -46,12 +48,9 @@ brew 'gnupg'
 cask 'gpgtools'
 cask 'tunnelblick'
 cask 'dashlane'
-brew 'justwatchcom/gopass/gopass'
+brew 'gopass'
 brew 'openssh'
 cask 'authy'
-
-### Provisioning
-brew 'ansible'
 
 ### Backup
 brew 'rsync'
@@ -68,6 +67,7 @@ brew 'graphviz'
 brew 'fzf'
 brew 'exa'
 brew 'jq'
+brew 'yq'
 brew 'wget'
 brew 'pv'
 brew 'hugo'
@@ -77,11 +77,19 @@ brew 'ansifilter'
 brew 'p7zip'
 cask 'meld'
 brew 'tree'
+brew 'whois'
+brew 'bash'
+brew 'thefuck'
+brew 'shellcheck'
+brew 'hairyhenderson/tap/gomplate'
+cask 'postman'
+brew 'adr-tools'
 
 ### Network
 brew 'vegeta'
 brew 'wireguard-tools'
 cask 'angry-ip-scanner'
+brew 'speedtest-cli'
 
 brew 'lftp'
 cask 'filezilla'
@@ -98,7 +106,9 @@ brew 'hub'
 brew 'gist'
 brew 'bfg'
 cask 'sourcetree'
-cask 'github-desktop'
+cask 'github'
+brew 'git-sizer'
+brew 'legit'
 
 ### Fun
 brew 'fortune'
@@ -113,7 +123,6 @@ cask 'firefox'
 
 ## Development
 brew 'protobuf'
-cask 'fly'
 
 ### Go
 brew 'go'
@@ -126,16 +135,16 @@ cask 'java'
 brew 'kotlin'
 
 ### PHP
-brew 'homebrew/php/composer'
+brew 'composer'
 
 ### Cloud
 brew 'sam701/awstools/awstools'
 brew 'scaleway/scaleway/scw'
 brew 'azure-cli'
 brew 'awscli'
-brew 'giantswarm/giantswarm/gsctl'
 cask 'aws-vault'
 brew 'duck'
+brew 'wallix/awless/awless'
 
 ### IDE
 cask 'atom'
@@ -149,7 +158,11 @@ cask 'mysqlworkbench'
 ### IOT
 brew 'platformio'
 brew 'picocom'
-cask 'caskroom/drivers/silicon-labs-vcp-driver'
+brew 'avrdude'
+
+### Driver
+cask 'homebrew/cask-drivers/silicon-labs-vcp-driver'
+cask 'homebrew/cask-drivers/prolific-pl2303'
 
 ### Kubernetes
 cask 'minikube'
@@ -166,13 +179,16 @@ brew 'eugenmayer/dockersync/unox'
 ### DevOps
 brew 'terraform'
 brew 'terraform-docs'
+#brew 'terragrunt'
 brew 'packer'
-cask 'inspec'
+#cask 'inspec'
+brew 'wata727/tflint/tflint'
+brew 'chamber'
 
 ## Fonts
-cask 'caskroom/fonts/font-hack'
-cask 'caskroom/fonts/font-hack-nerd-font-mono'
-cask 'caskroom/fonts/font-sourcecodepro-nerd-font-mono'
+cask 'homebrew/cask-fonts/font-hack'
+cask 'homebrew/cask-fonts/font-hack-nerd-font-mono'
+cask 'homebrew/cask-fonts/font-sourcecodepro-nerd-font-mono'
 
 ## Communication
 cask 'whatsapp'
@@ -183,10 +199,15 @@ cask 'keybase'
 ## Office
 cask 'microsoft-office'
 cask 'skype-for-business'
-cask 'mmex'
+#cask 'mactex'
+cask 'zoomus'
 
-## Photos
-cask 'darktable'
+## Multimedia
+cask 'handbrake'
+cask 'vlc'
+cask 'amazon-music'
+#cask 'darktable'
 
-## Gaming
-cask 'steam'
+## 3D Printing
+cask 'blender'
+cask 'ultimaker-cura'
