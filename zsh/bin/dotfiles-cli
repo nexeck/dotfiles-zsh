@@ -3,7 +3,7 @@
 task_dotfiles_update() {
   git -C ~/.dotfiles pull
   rcup -f -v
-  brew bundle install --force --global
+  task_brew_bundle_force
 }
 
 task_brew_update() {
@@ -19,14 +19,14 @@ task_brew_cleanup() {
 }
 
 task_brew_bundle_force() {
-  brew bundle install --force --global
   brew bundle cleanup --force --global
+  brew bundle install --force --global --verbose
 }
 
 task_brew_usage() {
   echo "usage: $0 update | cleanup | bundle-force"
   echo "  update          update brew & cask"
-  echo "  cleanup         brew tasks"
+  echo "  cleanup         cleanup & prune"
   echo "  bundle-force    force to only respect ~/.Brewfile"
   exit 1
 }
