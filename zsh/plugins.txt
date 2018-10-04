@@ -1,3 +1,5 @@
 mgee/slimline
+#denysdovhan/spaceship-prompt
+mafredri/zsh-async
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-autosuggestions

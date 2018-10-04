@@ -3,6 +3,7 @@
 task_dotfiles_update() {
   git -C ~/.dotfiles pull
   rcup -f -v
+  antibody update
   task_brew_bundle_force
 }
 

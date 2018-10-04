@@ -28,6 +28,11 @@ zstyle ':completion:*' matcher-list +'l:|=* r:|=*'
 autoload colors zsh/terminfo
 colors
 
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^xe' edit-command-line
+bindkey '^x^e' edit-command-line
+
 # Editors {{{
 if command -v nvim > /dev/null 2>&1; then
   export EDITOR='nvim'
@@ -85,6 +90,7 @@ setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 
 if which tmux 2>&1 >/dev/null; then
   if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-    tmux attach -t basic || tmux new -s basic; exit
+    #tmux attach -t basic || tmux new -s basic; exit
+    #tmux -CC attach
   fi
 fi

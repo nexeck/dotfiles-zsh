@@ -13,19 +13,25 @@ tap 'sam701/awstools'
 tap 'eugenmayer/dockersync'
 tap 'wata727/tflint'
 tap 'wallix/awless'
-tap 'hairyhenderson/tap'
+tap 'timothyye/tap'
+tap 'vitorgalvao/tiny-scripts'
+tap 'buo/cask-upgrade'
 
 # Packages
 
+## Homebrew
+brew 'vitorgalvao/tiny-scripts/cask-repair'
+
 ## Shell
 cask 'iterm2'
+cask 'upterm'
+cask 'hyper'
 brew 'zsh'
 brew 'zsh-completion'
 brew 'getantibody/tap/antibody'
 brew 'tmux-xpanes'
 brew 'tmux'
 brew 'reattach-to-user-namespace'
-cask 'hyper'
 
 ## Tools
 brew 'thoughtbot/formulae/rcm'
@@ -51,14 +57,21 @@ cask 'dashlane'
 brew 'gopass'
 brew 'openssh'
 cask 'authy'
+brew 'timothyye/tap/skm'
 
 ### Backup
 brew 'rsync'
 brew 'rclone'
 brew 'restic'
+#cask 'backblaze'
 
 ### Filesystem
 brew 'unison'
+
+### Screensaver
+cask 'developerexcuses'
+cask 'Fliqlo'
+cask 'padbury-clock'
 
 ### Utils
 brew 'htop'
@@ -81,9 +94,15 @@ brew 'whois'
 brew 'bash'
 brew 'thefuck'
 brew 'shellcheck'
-brew 'hairyhenderson/tap/gomplate'
+brew 'gomplate'
 cask 'postman'
 brew 'adr-tools'
+cask 'etcher'
+cask 'macs-fan-control'
+brew 'fortio'
+brew 'hostess'
+cask 'boostnote'
+brew 'bcal'
 
 ### Network
 brew 'vegeta'
@@ -107,6 +126,7 @@ brew 'gist'
 brew 'bfg'
 cask 'sourcetree'
 cask 'github'
+cask 'gitkraken'
 brew 'git-sizer'
 brew 'legit'
 
@@ -120,6 +140,7 @@ cask 'kindle'
 ## Browser
 cask 'google-chrome'
 cask 'firefox'
+cask 'tor-browser'
 
 ## Development
 brew 'protobuf'
@@ -127,6 +148,10 @@ brew 'protobuf'
 ### Go
 brew 'go'
 brew 'dep'
+
+### R
+cask 'r-app'
+cask 'rstudio'
 
 ### Java
 cask 'java'
@@ -136,6 +161,9 @@ brew 'kotlin'
 
 ### PHP
 brew 'composer'
+
+### LUA
+brew 'lua'
 
 ### Cloud
 brew 'sam701/awstools/awstools'
@@ -186,9 +214,9 @@ brew 'wata727/tflint/tflint'
 brew 'chamber'
 
 ## Fonts
-cask 'homebrew/cask-fonts/font-hack'
 cask 'homebrew/cask-fonts/font-hack-nerd-font-mono'
 cask 'homebrew/cask-fonts/font-sourcecodepro-nerd-font-mono'
+cask 'homebrew/cask-fonts/font-go-mono-nerd-font-mono'
 
 ## Communication
 cask 'whatsapp'
@@ -199,14 +227,19 @@ cask 'keybase'
 ## Office
 cask 'microsoft-office'
 cask 'skype-for-business'
+cask 'onedrive'
+cask 'microsoft-teams'
+cask 'adobe-acrobat-reader'
 #cask 'mactex'
 cask 'zoomus'
+cask 'drawio'
 
 ## Multimedia
 cask 'handbrake'
 cask 'vlc'
 cask 'amazon-music'
 #cask 'darktable'
+cask 'twitch'
 
 ## 3D Printing
 cask 'blender'
