@@ -5,7 +5,7 @@ task_set_google() {
 }
 
 task_set_quad9() {
-  sudo networksetup -setdnsservers Wi-Fi 9.9.9.9 2620:fe::fe
+  sudo networksetup -setdnsservers Wi-Fi 9.9.9.9 149.112.112.112 2620:fe::fe 2620:fe::9
 }
 
 task_set_cloudflare() {
