@@ -20,7 +20,7 @@ task_brew_cleanup() {
 }
 
 task_brew_bundle_force() {
-  brew bundle cleanup --force --global
+  brew bundle cleanup --force --global --verbose
   brew bundle install --force --global --verbose
 }
 
@@ -54,6 +54,6 @@ command=${1:-}
 shift || true
 case ${command} in
   update)   task_dotfiles_update ;;
-  brew)     task_brew {$@,1} ;;
+  brew)     task_brew "${@}" ;;
   *)        task_usage ;;
 esac
