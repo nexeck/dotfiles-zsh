@@ -1,0 +1,11 @@
+Include ~/.ssh_local/*
+
+Host *
+  Protocol 2
+  HashKnownHosts yes
+  VisualHostKey yes
+  PasswordAuthentication no
+  StrictHostKeyChecking ask
+  ControlMaster auto
+  ControlPath ~/.ssh/master-%r@%h:%p
+  ControlPersist 5m
