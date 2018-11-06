@@ -3,19 +3,18 @@ tap 'caskroom/cask'
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
-tap 'homebrew/php'
 tap 'homebrew/cask'
 
 tap 'getantibody/tap'
 tap 'thoughtbot/formulae'
 tap 'scaleway/scaleway'
-tap 'sam701/awstools'
 tap 'eugenmayer/dockersync'
 tap 'wata727/tflint'
 tap 'wallix/awless'
 tap 'timothyye/tap'
 tap 'vitorgalvao/tiny-scripts'
 tap 'buo/cask-upgrade'
+tap 'golangci/tap'
 
 # Packages
 
@@ -24,19 +23,17 @@ brew 'vitorgalvao/tiny-scripts/cask-repair'
 
 ## Shell
 cask 'iterm2'
-cask 'upterm'
-cask 'hyper'
 brew 'zsh'
 brew 'zsh-completion'
 brew 'getantibody/tap/antibody'
-brew 'tmux-xpanes'
 brew 'tmux'
 brew 'reattach-to-user-namespace'
 
-## Tools
+## Dotfiles Tools
 brew 'thoughtbot/formulae/rcm'
-cask 'cheatsheet'
-cask 'keepingyouawake'
+
+## Tools
+cask 'keepingyouawake' # Prevent Mac from Sleeping
 
 ### GNU Utils
 brew 'coreutils'
@@ -58,24 +55,24 @@ brew 'gopass'
 brew 'openssh'
 cask 'authy'
 brew 'timothyye/tap/skm'
+brew 'hopenpgp-tools'
+brew 'paperkey'
+brew 'pinentry'
+brew 'pinentry-mac'
 
 ### Backup
 brew 'rsync'
 brew 'rclone'
 brew 'restic'
-#cask 'backblaze'
-
-### Filesystem
-brew 'unison'
 
 ### Screensaver
 cask 'developerexcuses'
-cask 'Fliqlo'
 cask 'padbury-clock'
 
 ### Utils
 brew 'htop'
 brew 'watch'
+brew 'curl'
 brew 'graphviz'
 brew 'fzf'
 brew 'exa'
@@ -103,6 +100,15 @@ brew 'fortio'
 brew 'hostess'
 cask 'boostnote'
 brew 'bcal'
+brew 'testssl'
+brew 'stormssh'
+brew 'miller'
+cask 'keka'
+cask 'daisydisk'
+
+### Password Tools
+brew 'john-jumbo'
+brew 'hashcat'
 
 ### Network
 brew 'vegeta'
@@ -115,24 +121,19 @@ cask 'filezilla'
 
 ### Git
 brew 'git'
-brew 'git-quick-stats'
-brew 'git-cal'
-brew 'git-extras'
-brew 'git-town'
 brew 'git-lfs'
 brew 'tig'
-brew 'hub'
 brew 'gist'
-brew 'bfg'
+brew 'bfg' # BFG Repo-Cleaner
+brew 'pre-commit'
+brew 'legit'
+brew 'git-town'
+brew 'git-sizer'
 cask 'sourcetree'
 cask 'github'
 cask 'gitkraken'
-brew 'git-sizer'
-brew 'legit'
+brew 'hub'
 
-### Fun
-brew 'fortune'
-brew 'ponysay'
 
 ## Reading
 cask 'kindle'
@@ -148,10 +149,7 @@ brew 'protobuf'
 ### Go
 brew 'go'
 brew 'dep'
-
-### R
-cask 'r-app'
-cask 'rstudio'
+brew 'golangci/tap/golangci-lint'
 
 ### Java
 cask 'java'
@@ -159,19 +157,28 @@ cask 'java'
 ### Kotlin
 brew 'kotlin'
 
-### PHP
-brew 'composer'
-
 ### LUA
 brew 'lua'
 
+### Rust
+brew 'rust'
+
+### Erlang
+brew 'erlang'
+brew 'elixir'
+
+### Python
+brew 'python'
+brew 'python@2'
+
+### Node
+brew 'node'
+brew 'npm'
+
 ### Cloud
-brew 'sam701/awstools/awstools'
 brew 'scaleway/scaleway/scw'
-brew 'azure-cli'
 brew 'awscli'
 cask 'aws-vault'
-brew 'duck'
 brew 'wallix/awless/awless'
 
 ### IDE
@@ -179,7 +186,6 @@ cask 'atom'
 cask 'visual-studio-code'
 cask 'jetbrains-toolbox'
 brew 'neovim'
-brew 'micro'
 cask 'arduino'
 cask 'mysqlworkbench'
 
@@ -189,8 +195,8 @@ brew 'picocom'
 brew 'avrdude'
 
 ### Driver
-cask 'homebrew/cask-drivers/silicon-labs-vcp-driver'
-cask 'homebrew/cask-drivers/prolific-pl2303'
+cask 'silicon-labs-vcp-driver'
+cask 'prolific-pl2303'
 
 ### Kubernetes
 cask 'minikube'
@@ -202,21 +208,22 @@ cask 'docker'
 brew 'docker-machine-driver-xhyve'
 
 ### Docker Sync
+brew 'unison'
 brew 'eugenmayer/dockersync/unox'
 
 ### DevOps
 brew 'terraform'
-brew 'terraform-docs'
-#brew 'terragrunt'
+# brew 'terraform-docs'
+# brew 'terragrunt'
 brew 'packer'
-#cask 'inspec'
+# cask 'inspec'
 brew 'wata727/tflint/tflint'
-brew 'chamber'
+# brew 'chamber'
 
 ## Fonts
-cask 'homebrew/cask-fonts/font-hack-nerd-font-mono'
-cask 'homebrew/cask-fonts/font-sourcecodepro-nerd-font-mono'
-cask 'homebrew/cask-fonts/font-go-mono-nerd-font-mono'
+cask 'font-hack-nerd-font-mono'
+cask 'font-sourcecodepro-nerd-font-mono'
+cask 'font-go-mono-nerd-font-mono'
 
 ## Communication
 cask 'whatsapp'
@@ -232,14 +239,13 @@ cask 'microsoft-teams'
 cask 'adobe-acrobat-reader'
 #cask 'mactex'
 cask 'zoomus'
-cask 'drawio'
 
 ## Multimedia
 cask 'handbrake'
 cask 'vlc'
 cask 'amazon-music'
-#cask 'darktable'
-cask 'twitch'
+cask 'xld'
+cask 'musicbrainz-picard'
 
 ## 3D Printing
 cask 'blender'
