@@ -105,6 +105,8 @@ brew 'stormssh'
 brew 'miller'
 cask 'keka'
 cask 'daisydisk'
+brew 'asciinema'
+cask 'osxfuse'
 
 ### Password Tools
 brew 'john-jumbo'
