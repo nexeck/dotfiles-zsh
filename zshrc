@@ -1,10 +1,15 @@
 # _exports
 export DOTFILES="$HOME/.dotfiles"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="$PATH:$(go env GOPATH)/bin"
+if command -v go > /dev/null 2>&1; then
+  export PATH="$PATH:$(go env GOPATH)/bin"
+fi
 export PATH="$HOME/.dotfiles/zsh/bin:$PATH"
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
-export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+if command -v brew > /dev/null 2>&1; then
+  export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+  export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+fi
+export PATH="/usr/local/bin:$PATH"
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
@@ -17,6 +22,7 @@ antibody bundle < ~/.zsh/plugins.txt
 # _source
 source ~/.zsh/functions/001-aliases.zsh
 source ~/.zsh/functions/002-fzf.zsh
+source ~/.zsh/functions/003-autocomplete.zsh
 
 # _secret configs
 test -e ~/.secrets && source ~/.secrets
@@ -36,9 +42,12 @@ bindkey '^x^e' edit-command-line
 # Editors {{{
 if command -v nvim > /dev/null 2>&1; then
   export EDITOR='nvim'
-  export VISUAL='nvim'
 else
   export EDITOR='vim'
+fi
+if command -v atom > /dev/null 2>&1; then
+  export VISUAL='atom'
+else
   export VISUAL='vim'
 fi
 # }}}
@@ -94,3 +103,9 @@ if which tmux 2>&1 >/dev/null; then
     #tmux -CC attach
   fi
 fi
+
+gpg-connect-agent updatestartuptty /bye
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+
+# _local zshrc
+test -e ~/.zshrc.local && source ~/.zshrc.local
