@@ -11,15 +11,16 @@ tap 'scaleway/scaleway'
 tap 'eugenmayer/dockersync'
 tap 'wata727/tflint'
 tap 'wallix/awless'
-tap 'timothyye/tap'
 tap 'vitorgalvao/tiny-scripts'
 tap 'buo/cask-upgrade'
 tap 'golangci/tap'
+tap 'nexeck/homebrew-tmuxinator'
 
 # Packages
 
 ## Homebrew
 brew 'vitorgalvao/tiny-scripts/cask-repair'
+brew 'mas'
 
 ## Shell
 cask 'iterm2'
@@ -28,6 +29,7 @@ brew 'zsh-completion'
 brew 'getantibody/tap/antibody'
 brew 'tmux'
 brew 'reattach-to-user-namespace'
+brew 'nexeck/homebrew-tmuxinator/tmuxinator'
 
 ## Dotfiles Tools
 brew 'thoughtbot/formulae/rcm'
@@ -35,7 +37,50 @@ brew 'thoughtbot/formulae/rcm'
 ## Tools
 cask 'keepingyouawake' # Prevent Mac from Sleeping
 
-### GNU Utils
+## Languages
+### Go
+brew 'go'
+brew 'dep'
+brew 'golangci/tap/golangci-lint'
+
+### Java
+cask 'java'
+
+### Kotlin
+brew 'kotlin'
+
+### LUA
+brew 'lua'
+
+### Rust
+brew 'rust'
+
+### Erlang
+brew 'erlang'
+brew 'elixir'
+
+### Python
+brew 'python'
+brew 'python@2'
+
+### Node
+brew 'node'
+brew 'npm'
+
+## Browser
+cask 'google-chrome'
+cask 'firefox'
+cask 'tor-browser'
+
+## IDE
+cask 'atom'
+cask 'visual-studio-code'
+cask 'jetbrains-toolbox'
+brew 'neovim'
+cask 'arduino'
+cask 'mysqlworkbench'
+
+## GNU Utils
 brew 'coreutils'
 brew 'binutils'
 brew 'diffutils'
@@ -46,30 +91,34 @@ brew 'gnu-tar'
 brew 'gnu-which'
 brew 'grep'
 
-### Security
+## Security
 brew 'gnupg'
-cask 'gpgtools'
+cask 'gpg-suite'
 cask 'tunnelblick'
 cask 'dashlane'
 brew 'gopass'
 brew 'openssh'
 cask 'authy'
-brew 'timothyye/tap/skm'
 brew 'hopenpgp-tools'
 brew 'paperkey'
 brew 'pinentry'
 brew 'pinentry-mac'
 
-### Backup
+## Yubikey
+brew 'yubikey-personalization'
+brew 'ykman'
+cask 'yubico-yubikey-manager'
+cask 'yubico-yubikey-personalization-gui'
+
+## Backup
 brew 'rsync'
 brew 'rclone'
 brew 'restic'
 
-### Screensaver
-cask 'developerexcuses'
+## Screensaver
 cask 'padbury-clock'
 
-### Utils
+## Utils
 brew 'htop'
 brew 'watch'
 brew 'curl'
@@ -107,12 +156,14 @@ cask 'keka'
 cask 'daisydisk'
 brew 'asciinema'
 cask 'osxfuse'
+brew 'fping'
+brew 'liboping'
 
-### Password Tools
+## Password Tools
 brew 'john-jumbo'
 brew 'hashcat'
 
-### Network
+## Network
 brew 'vegeta'
 brew 'wireguard-tools'
 cask 'angry-ip-scanner'
@@ -121,7 +172,7 @@ brew 'speedtest-cli'
 brew 'lftp'
 cask 'filezilla'
 
-### Git
+## Git
 brew 'git'
 brew 'git-lfs'
 brew 'tig'
@@ -136,60 +187,17 @@ cask 'github'
 cask 'gitkraken'
 brew 'hub'
 
-
 ## Reading
 cask 'kindle'
 
-## Browser
-cask 'google-chrome'
-cask 'firefox'
-cask 'tor-browser'
-
 ## Development
 brew 'protobuf'
-
-### Go
-brew 'go'
-brew 'dep'
-brew 'golangci/tap/golangci-lint'
-
-### Java
-cask 'java'
-
-### Kotlin
-brew 'kotlin'
-
-### LUA
-brew 'lua'
-
-### Rust
-brew 'rust'
-
-### Erlang
-brew 'erlang'
-brew 'elixir'
-
-### Python
-brew 'python'
-brew 'python@2'
-
-### Node
-brew 'node'
-brew 'npm'
 
 ### Cloud
 brew 'scaleway/scaleway/scw'
 brew 'awscli'
 cask 'aws-vault'
 brew 'wallix/awless/awless'
-
-### IDE
-cask 'atom'
-cask 'visual-studio-code'
-cask 'jetbrains-toolbox'
-brew 'neovim'
-cask 'arduino'
-cask 'mysqlworkbench'
 
 ### IOT
 brew 'platformio'
@@ -200,14 +208,14 @@ brew 'avrdude'
 cask 'silicon-labs-vcp-driver'
 cask 'prolific-pl2303'
 
+### Docker
+cask 'docker'
+brew 'docker-machine-driver-xhyve'
+
 ### Kubernetes
 cask 'minikube'
 brew 'kubectl'
 brew 'kubernetes-helm'
-
-### Docker
-cask 'docker'
-brew 'docker-machine-driver-xhyve'
 
 ### Docker Sync
 brew 'unison'
@@ -229,8 +237,6 @@ cask 'font-go-mono-nerd-font-mono'
 
 ## Communication
 cask 'whatsapp'
-cask 'slack'
-cask 'riot'
 cask 'keybase'
 
 ## Office
@@ -252,3 +258,6 @@ cask 'musicbrainz-picard'
 ## 3D Printing
 cask 'blender'
 cask 'ultimaker-cura'
+
+# mas
+mas 'Xcode', id: 497799835
