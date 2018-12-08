@@ -1,5 +1,9 @@
+
+mafredri/zsh-async
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+
+# these should be at last!
 mgee/slimline
 #denysdovhan/spaceship-prompt
-mafredri/zsh-async
 zsh-users/zsh-syntax-highlighting
-zsh-users/zsh-autosuggestions
