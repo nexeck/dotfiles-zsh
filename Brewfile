@@ -14,6 +14,7 @@ tap 'wallix/awless'
 tap 'vitorgalvao/tiny-scripts'
 tap 'buo/cask-upgrade'
 tap 'golangci/tap'
+tap 'chef/chef'
 tap 'nexeck/homebrew-tmuxinator'
 
 # Packages
@@ -62,6 +63,7 @@ brew 'elixir'
 ### Python
 brew 'python'
 brew 'python@2'
+brew 'pipenv'
 
 ### Node
 brew 'node'
@@ -90,6 +92,8 @@ brew 'gnu-sed'
 brew 'gnu-tar'
 brew 'gnu-which'
 brew 'grep'
+brew 'autoconf'
+brew 'automake'
 
 ## Security
 brew 'gnupg'
@@ -158,6 +162,7 @@ brew 'asciinema'
 cask 'osxfuse'
 brew 'fping'
 brew 'liboping'
+cask 'drawio'
 
 ## Password Tools
 brew 'john-jumbo'
@@ -179,12 +184,10 @@ brew 'tig'
 brew 'gist'
 brew 'bfg' # BFG Repo-Cleaner
 brew 'pre-commit'
-brew 'legit'
 brew 'git-town'
 brew 'git-sizer'
 cask 'sourcetree'
 cask 'github'
-cask 'gitkraken'
 brew 'hub'
 
 ## Reading
@@ -226,7 +229,7 @@ brew 'terraform'
 # brew 'terraform-docs'
 # brew 'terragrunt'
 brew 'packer'
-# cask 'inspec'
+cask inspec
 brew 'wata727/tflint/tflint'
 # brew 'chamber'
 
@@ -237,7 +240,7 @@ cask 'font-go-mono-nerd-font-mono'
 
 ## Communication
 cask 'whatsapp'
-cask 'keybase'
+#cask 'keybase'
 
 ## Office
 cask 'microsoft-office'
