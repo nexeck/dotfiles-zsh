@@ -16,6 +16,10 @@ tap 'buo/cask-upgrade'
 tap 'golangci/tap'
 tap 'chef/chef'
 tap 'nexeck/homebrew-tmuxinator'
+tap 'cjbassi/gotop'
+tap 'wagoodman/dive'
+tap 'isacikgoz/taps'
+tap 'aws/tap'
 
 # Packages
 
@@ -41,7 +45,6 @@ cask 'keepingyouawake' # Prevent Mac from Sleeping
 ## Languages
 ### Go
 brew 'go'
-brew 'dep'
 brew 'golangci/tap/golangci-lint'
 
 ### Java
@@ -67,18 +70,24 @@ brew 'pipenv'
 
 ### Node
 brew 'node'
-brew 'npm'
+brew 'yarn'
+
+### R
+cask 'rstudio'
+
+### Ruby
+brew 'ruby'
 
 ## Browser
 cask 'google-chrome'
 cask 'firefox'
-cask 'tor-browser'
 
 ## IDE
 cask 'atom'
 cask 'visual-studio-code'
 cask 'jetbrains-toolbox'
 brew 'neovim'
+brew 'emacs'
 cask 'arduino'
 cask 'mysqlworkbench'
 
@@ -100,6 +109,7 @@ brew 'gnupg'
 cask 'gpg-suite'
 cask 'tunnelblick'
 cask 'dashlane'
+cask '1password'
 brew 'gopass'
 brew 'openssh'
 cask 'authy'
@@ -118,9 +128,6 @@ cask 'yubico-yubikey-personalization-gui'
 brew 'rsync'
 brew 'rclone'
 brew 'restic'
-
-## Screensaver
-cask 'padbury-clock'
 
 ## Utils
 brew 'htop'
@@ -142,16 +149,15 @@ cask 'meld'
 brew 'tree'
 brew 'whois'
 brew 'bash'
-brew 'thefuck'
 brew 'shellcheck'
 brew 'gomplate'
 cask 'postman'
 brew 'adr-tools'
-cask 'etcher'
-cask 'macs-fan-control'
+cask 'balenaetcher'
 brew 'fortio'
 brew 'hostess'
 cask 'boostnote'
+cask 'notable'
 brew 'bcal'
 brew 'testssl'
 brew 'stormssh'
@@ -163,6 +169,19 @@ cask 'osxfuse'
 brew 'fping'
 brew 'liboping'
 cask 'drawio'
+brew 'cjbassi/gotop/gotop'
+brew 'glances'
+brew 'watchman'
+brew 'doitlive'
+cask 'whatpulse'
+
+## Documents
+cask 'commander-one'
+brew 'tesseract'
+brew 'tesseract-lang'
+brew 'ocrmypdf'
+brew 'poppler'
+brew 'exiftool'
 
 ## Password Tools
 brew 'john-jumbo'
@@ -180,7 +199,7 @@ cask 'filezilla'
 ## Git
 brew 'git'
 brew 'git-lfs'
-brew 'tig'
+brew 'git-tig'
 brew 'gist'
 brew 'bfg' # BFG Repo-Cleaner
 brew 'pre-commit'
@@ -189,6 +208,7 @@ brew 'git-sizer'
 cask 'sourcetree'
 cask 'github'
 brew 'hub'
+brew 'isacikgoz/taps/gitbatch'
 
 ## Reading
 cask 'kindle'
@@ -197,7 +217,6 @@ cask 'kindle'
 brew 'protobuf'
 
 ### Cloud
-brew 'scaleway/scaleway/scw'
 brew 'awscli'
 cask 'aws-vault'
 brew 'wallix/awless/awless'
@@ -214,6 +233,7 @@ cask 'prolific-pl2303'
 ### Docker
 cask 'docker'
 brew 'docker-machine-driver-xhyve'
+brew 'wagoodman/dive/dive'
 
 ### Kubernetes
 cask 'minikube'
@@ -229,7 +249,7 @@ brew 'terraform'
 # brew 'terraform-docs'
 # brew 'terragrunt'
 brew 'packer'
-cask inspec
+cask 'chef/chef/inspec'
 brew 'wata727/tflint/tflint'
 # brew 'chamber'
 
@@ -249,14 +269,19 @@ cask 'onedrive'
 cask 'microsoft-teams'
 cask 'adobe-acrobat-reader'
 #cask 'mactex'
-cask 'zoomus'
+#cask 'zoomus'
+#cask 'ynab'
 
 ## Multimedia
 cask 'handbrake'
 cask 'vlc'
+cask 'iina'
 cask 'amazon-music'
-cask 'xld'
-cask 'musicbrainz-picard'
+#cask 'xld'
+#cask 'musicbrainz-picard'
+
+## Gaming
+cask 'steam'
 
 ## 3D Printing
 cask 'blender'
@@ -264,3 +289,5 @@ cask 'ultimaker-cura'
 
 # mas
 mas 'Xcode', id: 497799835
+mas 'Planner 5d', id: 1310584536
+mas 'WireGuard', id: 1451685025
