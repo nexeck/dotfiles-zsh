@@ -2,13 +2,17 @@
 [include]
   path = ~/.gitconfig.local
 
-[apply]
+[includeIf "gitdir:~/dev/personal/"]
+  path = ~/.gitconfig.personal
 
+[includeIf "gitdir:~/dev/work/"]
+  path = ~/.gitconfig.work
+
+[apply]
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
 
 [core]
-
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
@@ -32,27 +36,24 @@
 	editor = nvim
 
 [commit]
-
 	# https://help.github.com/articles/signing-commits-using-gpg/
 	gpgsign = true
 
-[diff]
+  template = ~/.git-template-commit
 
+[diff]
 	# Detect copies as well as renames
 	renames = copies
 
 [help]
-
 	# Automatically correct and execute mistyped commands
 	autocorrect = 1
 
 [merge]
-
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
 
 [push]
-
 	# Use the Git 1.x.x default to avoid errors on machines with old Git
 	# installations. To use `simple` instead, add this to your `~/.extra` file:
 	# `git config --global push.default simple`. See http://git.io/mMah-w.
@@ -68,7 +69,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
