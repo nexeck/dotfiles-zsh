@@ -174,6 +174,7 @@ brew 'glances'
 brew 'watchman'
 brew 'doitlive'
 cask 'whatpulse'
+brew 'mage'
 
 ## Documents
 cask 'commander-one'
