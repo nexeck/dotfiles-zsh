@@ -13,7 +13,7 @@ fi
 if command -v exa > /dev/null 2>&1; then
   alias ls='exa --group-directories-first'
   alias l='ls'
-  alias ll='ls -l'
+  alias ll='ls --long --git --time-style long-iso'
   alias la='ll -a'
 else
   alias l='ls'
