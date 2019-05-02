@@ -15,7 +15,6 @@ tap 'vitorgalvao/tiny-scripts'
 tap 'buo/cask-upgrade'
 tap 'golangci/tap'
 tap 'chef/chef'
-tap 'nexeck/homebrew-tmuxinator'
 tap 'cjbassi/gotop'
 tap 'wagoodman/dive'
 tap 'isacikgoz/taps'
@@ -34,7 +33,6 @@ brew 'zsh-completion'
 brew 'getantibody/tap/antibody'
 brew 'tmux'
 brew 'reattach-to-user-namespace'
-brew 'nexeck/homebrew-tmuxinator/tmuxinator'
 
 ## Dotfiles Tools
 brew 'thoughtbot/formulae/rcm'
@@ -84,12 +82,14 @@ cask 'firefox'
 
 ## IDE
 cask 'atom'
+cask 'visual-studio'
 cask 'visual-studio-code'
 cask 'jetbrains-toolbox'
 brew 'neovim'
 brew 'emacs'
 cask 'arduino'
 cask 'mysqlworkbench'
+cask 'azure-data-studio'
 
 ## GNU Utils
 brew 'coreutils'
@@ -111,7 +111,9 @@ cask 'tunnelblick'
 cask 'dashlane'
 cask '1password'
 brew 'gopass'
+brew 'sops'
 brew 'openssh'
+brew 'sshuttle'
 cask 'authy'
 brew 'hopenpgp-tools'
 brew 'paperkey'
@@ -176,6 +178,11 @@ brew 'doitlive'
 cask 'whatpulse'
 brew 'mage'
 
+## Fun
+brew 'fortune'
+brew 'ponysay'
+brew 'cowsay'
+
 ## Documents
 cask 'commander-one'
 brew 'tesseract'
@@ -216,6 +223,7 @@ cask 'kindle'
 
 ## Development
 brew 'protobuf'
+brew 'asdf'
 
 ### Cloud
 brew 'awscli'
@@ -283,10 +291,14 @@ cask 'amazon-music'
 
 ## Gaming
 cask 'steam'
+cask 'epic-games'
 
 ## 3D Printing
 cask 'blender'
 cask 'ultimaker-cura'
+
+## Design
+cask 'sweet-home3d'
 
 # mas
 mas 'Xcode', id: 497799835
