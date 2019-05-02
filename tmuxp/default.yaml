@@ -1,0 +1,11 @@
+session_name: default
+windows:
+- window_name: main
+  layout: 6aa3,238x79,0,0{118x79,0,0,0,119x79,119,0[119x6,119,0,1,119x72,119,7,2]}
+  panes:
+  - blank
+  - ping 1.1.1.1
+  - blank
+- window_name: second
+  panes:
+  - blank
