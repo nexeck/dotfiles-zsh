@@ -71,7 +71,8 @@ brew 'node'
 brew 'yarn'
 
 ### R
-cask 'rstudio'
+# brew 'r'
+# cask 'rstudio'
 
 ### Ruby
 brew 'ruby'
@@ -177,6 +178,7 @@ brew 'watchman'
 brew 'doitlive'
 cask 'whatpulse'
 brew 'mage'
+brew 'z'
 
 ## Fun
 brew 'fortune'
@@ -280,6 +282,7 @@ cask 'adobe-acrobat-reader'
 #cask 'mactex'
 #cask 'zoomus'
 #cask 'ynab'
+cask 'discord'
 
 ## Multimedia
 cask 'handbrake'
