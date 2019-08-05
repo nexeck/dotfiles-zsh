@@ -179,6 +179,8 @@ brew 'doitlive'
 cask 'whatpulse'
 brew 'mage'
 brew 'z'
+brew 'gnu-time'
+brew 'lz4'
 
 ## Fun
 brew 'fortune'
