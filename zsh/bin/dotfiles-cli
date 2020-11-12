@@ -15,7 +15,6 @@ task_brew_update() {
 
 task_brew_cleanup() {
   brew cleanup
-  brew cask cleanup
 }
 
 task_brew_bundle_force() {

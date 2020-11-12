@@ -1,5 +1,11 @@
 Include ~/.ssh_local/*
 
+Host 172.16.*.*
+  PasswordAuthentication yes
+
+Host *.zero.cx
+  PasswordAuthentication yes
+
 Host *
   Protocol 2
   HashKnownHosts yes

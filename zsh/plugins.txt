@@ -2,6 +2,7 @@
 mafredri/zsh-async
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions
+skywind3000/z.lua
 
 # these should be at last!
 mgee/slimline
